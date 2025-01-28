@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def combine_datasets(input_dir="datasets", output_file="combined_dataset.csv"):
+def combine_datasets(input_dir="backend/datasets", output_file="combined_dataset.csv"):
     # Ensure the output directory exists
     output_dir = os.path.dirname(output_file)
     if output_dir and not os.path.exists(output_dir):
@@ -18,4 +18,4 @@ def combine_datasets(input_dir="datasets", output_file="combined_dataset.csv"):
     print(f"Combined dataset saved to {output_file}.")
 
 # Run the function
-combine_datasets(input_dir="datasets", output_file="datasets/combined_dataset.csv")
+combine_datasets(input_dir="backend/datasets", output_file="backend/datasets/combined_dataset.csv")

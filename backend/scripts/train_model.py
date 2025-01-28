@@ -5,7 +5,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import joblib
 
-def train_model(data_file="datasets/combined_dataset.csv", model_file="models/hand_gesture_model.pkl"):
+def train_model(data_file="backend/datasets/combined_dataset.csv", model_file="backend/models/hand_gesture_model.pkl"):
     # Ensure the directory exists
     os.makedirs(os.path.dirname(model_file), exist_ok=True)
  
@@ -34,4 +34,4 @@ def train_model(data_file="datasets/combined_dataset.csv", model_file="models/ha
     print(f"Model saved to {model_file}.")
 
 # Run the training function
-train_model(data_file="datasets/combined_dataset.csv", model_file="models/hand_gesture_model.pkl")
+train_model(data_file="backend/datasets/combined_dataset.csv", model_file="backend/models/hand_gesture_model.pkl")
